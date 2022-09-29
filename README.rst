@@ -1,3 +1,14 @@
+===================================
+Using This Repo to Benchmark The M1
+===================================
+It is assumed that you are using the system Python that ships with macOS.
+
+1. ``git clone git@github.com:ChrisDoohan/django_benchmark.git && cd django_benchmark``
+2. ``source bench/init_environment.sh``
+3. ``cd tests`` (it looks like running tests from the project root causes failures)
+4. ``/usr/bin/time ./runtests.py``
+5. When finished, run ``deactivate`` to deactivate the Python shims.
+
 ======
 Django
 ======
@@ -49,6 +60,6 @@ To run Django's test suite:
 Supporting the Development of Django
 ====================================
 
-Django's development depends on your contributions. 
+Django's development depends on your contributions.
 
 If you depend on Django, remember to support the Django Software Foundation: https://www.djangoproject.com/fundraising/
